@@ -20,10 +20,21 @@ window.onscroll=()=>{
 
 
     // remove toggle icon and navbar link
-
-    menuIcon.classList.remove('bx-x');
-    navbar.classList.remove('active');
+let menuIcon=document.querySelector('#menu-icon')
+function menuClick(){
+    console.log("clicked")
+    // menuIcon.classList.remove('bx-x');
+    // navbar.classList.remove('active');
 }
+ 
+}
+
+//menu
+let menuClick=()=>{
+console.log("menu clicked")
+}
+
+
 
 // scroll reveal
 ScrollReveal({ 
@@ -37,3 +48,4 @@ ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
 ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', {origin: 'bottom'});
 ScrollReveal().reveal('.home-content h1, .about-img', {origin: 'left'});
 ScrollReveal().reveal('.home-content p, .about-content', {origin: 'right'});
+
